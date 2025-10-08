@@ -17,6 +17,7 @@ class ApplicationController extends Controller
 
     public function __construct()
     {
+
         // Load API keys from .env
         $this->keyId = env('RAZORPAY_KEY_ID');
         $this->keySecret = env('RAZORPAY_KEY_SECRET');
